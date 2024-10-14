@@ -78,10 +78,21 @@ To calculate the after-tax cost of capital, we need one more piece of informatio
 
 \begin{align*}
 WACC_{a.t.} &= \lambda (1-t) r_D + (1-\lambda)r_E \\
-            &= 0.0422 \times (1 - 0.3858) \times 0.0628 + (1 - 0.0422) \times 0.1091 \\
-            &= 0.1061
+            &= 0.422 \times (1 - 0.3858) \times 0.0628 + (1 - 0.422) \times 0.1091 \\
+            &= 0.07933
 \end{align*}
 
-The $WACC_{a.t.}$ is 10.61\%.
+The $WACC_{a.t.}$ is 7.93\%.
+
+To find the un-levered asset beta, we can use the formula below.
+
+\begin{align*}
+\beta_{\text{Asset}} &= \frac{\text{Equity}}{\text{Debt + Equity}}\times \beta_{\text{Equity}} \\
+                    &= (1 - \lambda) \times \beta_{\text{Equity}} \\
+                    &= (1 - 0.422) \times 1.25 \\
+                    &= 0.7225
+\end{align*}
+
+The un-levered asset beta is 0.7225.
 
 \end{document}
