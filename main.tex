@@ -13,6 +13,7 @@
 \usepackage{bookmark}
 \usepackage{listings}
 \usepackage{framed}
+\usepackage{makecell}
 \usepackage[dvipsnames]{xcolor}
 \setlength{\parskip}{1em}
 \parindent=0pt
@@ -26,5 +27,18 @@
 \maketitle
 
 The risk-free rate should be the same one as the expected investment horizon - a typical value of 10 years should be the one we consider, so the risk free rate that we are using in the CAPM model is 4.66\%. With $r_f = 4.66\%$, we can compute the cost of debt $r_D$ and the cost of equity $r_E$.
+
+For the consolidated company, Midland's pre-tax cost of debt can be computed from the risk-free rate $r_f$ and the spread to treasury.
+
+\begin{table}[H]
+    \begin{tabularx}{\textwidth}{|>{\centering\arraybackslash}X|>{\centering\arraybackslash}X|>{\centering\arraybackslash}X|>{\centering\arraybackslash}X|}
+        \hline
+        Business Segment & Credit Rating & Spread to Treasury & Cost of debt \\ \hline
+        Consolidated & A+ & 1.62\% & 6.28\%\\ \hline
+        Exploration \& Production & A+ & 1.60\% & 6.26\%\\ \hline
+        Refining \& Marketing & BBB & 1.80\% & 6.46\% \\ \hline
+        Petrochemicals & AA- & 1.35\% & 6.01\% \\ \hline
+    \end{tabularx}
+\end{table}
 
 \end{document}
