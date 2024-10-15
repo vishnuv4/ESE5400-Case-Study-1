@@ -51,16 +51,13 @@ These 4 costs of debt are different because the credit ratings correspond with t
 
 We can also analyze the difference in the 4 costs of debt based on the nature of operations. Refining \& Marketing is seen as a riskier venture to invest in for three reasons: (a) stiff competition; (b) highly commoditized products; and (c) declining margins over the previous 20 years. So Refining \& Marketing has the lowest credit rating and therefore the highest cost of debt. Exploration \& Production was one of Midland's most profitable ventures, so there is a little more confidence in that business venture. However, that is offset by the fact that Midland has assets in politically volatile regions like the Middle East, Central Asia, Russia, and West Africa. So it has a slightly higher credit rating of A+. Petrochemicals has the highest credit rating because it has manufacturing facilities and research centers all over the world. Several older facilities were also replaced by more efficient ones - so there is much more confidence in this business segment compared to the other two, and that reflects in the highest credit rating out of the three (AA-) and the lowest cost of debt (6.01\%).
 
-For Midland's WACC calculations, it makes the most sense to take the average of the three tax rates in 2004, 2005, and 2006.
+For Midland's WACC calculations, we care about the WACC in year 2006. So it makes the most sense to take the tax in year 2006.
 
 \begin{align*}
-    t_{2004} = \frac{\$7,414}{\$17,910} &= 41.40\% \\
-    t_{2004} = \frac{\$7,414}{\$17,910} &= 39.20\% \\
-    t_{2004} = \frac{\$7,414}{\$17,910} &= 38.58\% \\
-    t_{avg} = \frac{41.40\% + 39.20\% + 38.58\%}{3} &= 39.73\%
+    t_{2006} = \frac{\$7,414}{\$17,910} &= 38.58\% \\
 \end{align*}
 
-So the average tax rate that we recommend using for WACC calculations is 39.73\%.
+So the average tax rate that we recommend using for WACC calculations is 38.58\%.
 
 The EMRP represents the difference between the expected return on equity and the risk-free rate. 
 
@@ -93,11 +90,11 @@ To calculate the after-tax cost of capital, we need one more piece of informatio
 
 \begin{align*}
 WACC_{a.t.} &= \lambda (1-t) r_D + (1-\lambda)r_E \\
-            &= 0.3723 \times (1 - 0.3973) \times 0.0628 + (1 - 0.3723) \times 0.1091 \\
-            &= 0.08258
+            &= 0.3723 \times (1 - 0.3858) \times 0.0628 + (1 - 0.3723) \times 0.1091 \\
+            &= 0.08285
 \end{align*}
 
-The $WACC_{a.t.}$ is 8.26\%.
+The $WACC_{a.t.}$ is 8.29\%.
 
 To find the un-levered asset beta, we can use the formula below.
 
@@ -134,11 +131,11 @@ The new cost of equity is 11.45\%. The corresponding WACC can be calculated as s
 
 \begin{align*}
 WACC_{a.t., 2007} &= \lambda_2 (1-t) r_D + (1-\lambda_2)r_{E,2} \\
-            &= 0.422 \times (1 - 0.3973) \times 0.0628 + (1 - 0.422) \times 0.1145 \\
-            &= 0.08214
+            &= 0.422 \times (1 - 0.3858) \times 0.0628 + (1 - 0.422) \times 0.1145 \\
+            &= 0.08244
 \end{align*}
 
-The corresponding WACC is 8.21\%. This is lesser than the WACC in 2006 by 0.05\%. A lower WACC implies that the company can more easily acquire financing for any project it wants to take on, which means there are more economically viable investments that the company can undertake.
+The corresponding WACC is 8.24\%. This is lesser than the WACC in 2006 by 0.05\%. A lower WACC implies that the company can more easily acquire financing for any project it wants to take on, which means there are more economically viable investments that the company can undertake.
 
 To graph the company's cost of equity and WACC as a function of it debt fraction, we can unlever and relever the beta values for each debt fraction and plot the corresponding costs of equity and WACC.
 
@@ -147,6 +144,17 @@ To graph the company's cost of equity and WACC as a function of it debt fraction
     \caption{Cost of equity vs. Debt Fraction}
 \end{figure}
 
+\color{orange}
 The cost of equity rises because as the debt value increases, the risk to investors increases so they demand a higher rate of return. At 0 debt, there is little risk to investors - so the cost of equity is very low. As debt increases, the interest that the investors require increases dramatically.
+\color{black}
+
+\begin{figure}[H]
+    \includegraphics[width=\linewidth]{images/wacc.png}
+    \caption{WACC vs. Debt Fraction}
+\end{figure}
+
+\color{orange}
+This makes sense because we assume a constant cost of debt $r_D$, which means that as the debt fraction goes up there's a lesser proportion of equity, so it's a decreasing linear relationship.
+\color{black}
 
 \end{document}
