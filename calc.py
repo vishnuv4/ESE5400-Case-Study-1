@@ -18,6 +18,9 @@ def cost_of_equity(beta, emrp, rf):
 def unlevered_asset_beta(debt_value, beta_equity):
     return ((1 - debt_value) * beta_equity)
 
+def relevered_equity_beta(debt_value_2, beta_asset):
+    return ((1/(1 - debt_value_2)) * beta_asset)
+
 # APPLICATION LAYER
 
 def average_tax_rate(print_output=False):
@@ -60,14 +63,45 @@ def unlevered_asset_beta_2006(print_output=False):
     de_ratio = 0.593
     beta_equity = 1.25
     debt_value = debtvalue_from_de_ratio(de_ratio)
+    beta_asset = unlevered_asset_beta(debt_value, beta_equity)
     if print_output:
         print()
-        print(f"Q7: Unlevered asset beta in 2006 = {unlevered_asset_beta(debt_value, beta_equity)}")
+        print(f"Q7: Unlevered asset beta in 2006 = {beta_asset}")
 
+    return beta_asset
 
+def relevered_beta_equity_2007(print_output=False):
+    debt_value_2007 = 0.422
+    beta_asset = unlevered_asset_beta_2006()
+    beta_equity_2007 = relevered_equity_beta(debt_value_2007, beta_asset)
+    if print_output:
+        print()
+        print(f"Beta equity for 2007: {beta_equity_2007}")
+    return beta_equity_2007
+
+def future_cost_of_equity_2007(print_output=False):
+    rf = 0.0466
+    emrp = 0.05
+    beta = relevered_beta_equity_2007()
+    re = cost_of_equity(beta, emrp, rf)
+    if print_output:
+        print(f"Q8: Cost of equity = {re}")
+    return re
+
+def future_wacc_2007(print_output=False):
+    l2 = 0.422
+    rd = 0.0628
+    t = average_tax_rate()
+    re = future_cost_of_equity_2007()
+    wacc_2007 = wacc(t, l2, re, rd)
+    if print_output:
+        print(f"Q8: WACC in 2007 = {wacc_2007}")
 
 if __name__ == "__main__":
     average_tax_rate(print_output=True)
     midland_cost_of_equity(print_output=True)
     midland_wacc_2006()
     unlevered_asset_beta_2006(print_output=True)
+    relevered_beta_equity_2007(print_output=True)
+    future_cost_of_equity_2007(print_output=True)
+    future_wacc_2007(print_output=True)

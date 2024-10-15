@@ -108,8 +108,36 @@ To find the un-levered asset beta, we can use the formula below.
                     &= 0.78468
 \end{align*}
 
-The un-levered asset beta is 0.785.
+The un-levered asset beta ($\beta_{Asset}$) is 0.785.
 
-The analysis so far has been done with data from 2006. Exhibit 5 mentions that the data is for EOY 2006. Table 1 indicates the target debt ratios for 2007 - we see that the target debt value is 42.2\%.
+The analysis so far has been done with data from 2006. Exhibit 5 mentions that the data is for EOY 2006. Table 1 indicates the target debt ratios for 2007 - we see that the target debt value is 42.2\%. This is a slight increase from the original debt value of 37.23\%.
+
+\begin{align*}
+\lambda_{1} &= 0.3723 \\
+\lambda_{2} &= 0.422  \\
+\beta_{Asset} &= (1 - \lambda_{1}) \times \beta_{Equity} \\
+            &= 0.785 \\
+\beta_{Equity,2} &= \frac{1}{1-\lambda_{2}} \times \beta_{Asset} \\
+                &= \frac{1}{1-0.422} \times 0.785 \\
+                &= 1.3576
+\end{align*}
+
+We can use this new value of beta to compute the future cost of equity.
+
+\begin{align*}
+r_{E,2} &= r_f + \beta_{Equity, 2} \times \text{EMRP} \\
+    &= 0.0466 + 1.3576 * 0.05 \\
+    &= 0.114479
+\end{align*}
+
+The new cost of equity is 11.45\%. The corresponding WACC can be calculated as shown below:
+
+\begin{align*}
+WACC_{a.t., 2007} &= \lambda_2 (1-t) r_D + (1-\lambda_2)r_{E,2} \\
+            &= 0.422 \times (1 - 0.3973) \times 0.0628 + (1 - 0.422) \times 0.1145 \\
+            &= 0.08214
+\end{align*}
+
+The corresponding WACC is 8.21\%. This is lesser than the WACC in 2006 by 0.05\%. A lower WACC implies that the company can more easily acquire financing for any project it wants to take on, which means there are more economically viable investments.
 
 \end{document}
