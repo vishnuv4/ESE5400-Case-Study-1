@@ -1,0 +1,18 @@
+certifi @ file:///home/conda/feedstock_root/build_artifacts/certifi_1725278078093/work/certifi
+contourpy @ file:///D:/bld/contourpy_1727293686047/work
+cycler @ file:///home/conda/feedstock_root/build_artifacts/cycler_1696677705766/work
+fonttools @ file:///D:/bld/fonttools_1727206454947/work
+kiwisolver @ file:///D:/bld/kiwisolver_1725459302972/work
+matplotlib==3.9.2
+munkres==1.1.4
+numpy @ file:///D:/bld/numpy_1728664377586/work/dist/numpy-2.1.2-cp312-cp312-win_amd64.whl#sha256=7f1422a23098f444b2f2c3e64395641098cb550395f577f537f9e7329847b114
+packaging @ file:///home/conda/feedstock_root/build_artifacts/packaging_1718189413536/work
+pillow @ file:///D:/bld/pillow_1726075241382/work
+pyparsing @ file:///home/conda/feedstock_root/build_artifacts/pyparsing_1728880423364/work
+PySide6==6.7.3
+python-dateutil @ file:///home/conda/feedstock_root/build_artifacts/python-dateutil_1709299778482/work
+setuptools==75.1.0
+shiboken6==6.7.3
+six @ file:///home/conda/feedstock_root/build_artifacts/six_1620240208055/work
+tornado @ file:///D:/bld/tornado_1724956232756/work
+wheel==0.44.0

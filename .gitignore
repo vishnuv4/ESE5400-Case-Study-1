@@ -1,4 +1,5 @@
-*
-!main.tex
-!.gitignore
-!calc.py
+*.aux
+*.log
+*.pdf
+*.gz
+*.ps1
