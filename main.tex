@@ -81,25 +81,33 @@ r_E &= 4.66\% + 1.25 \times 5\% \\
 r_E &= 10.91\%
 \end{align*}
 
-To calculate the after-tax cost of capital, we need one more piece of information - the debt/value $\lambda$, which we can see from Table 1 is 42.2\% for the consolidated company.
+To calculate the after-tax cost of capital, we need one more piece of information - the debt/value $\lambda$. We see from Exhibit 5 that the D/E ratio is 59.3\%.
+
+\begin{align*}
+    \lambda &= \frac{D}{D+E} \\
+            &= \frac{\frac{D}{E}}{\frac{D}{E} + 1} \\
+            &= \frac{0.593}{0.593 + 1} \\
+            &= \frac{0.593}{1.593} \\
+    \lambda &= 37.23\%
+\end{align*}
 
 \begin{align*}
 WACC_{a.t.} &= \lambda (1-t) r_D + (1-\lambda)r_E \\
-            &= 0.422 \times (1 - 0.3973) \times 0.0628 + (1 - 0.422) \times 0.1091 \\
-            &= 0.07903
+            &= 0.3723 \times (1 - 0.3973) \times 0.0628 + (1 - 0.3723) \times 0.1091 \\
+            &= 0.08258
 \end{align*}
 
-The $WACC_{a.t.}$ is 7.90\%.
+The $WACC_{a.t.}$ is 8.26\%.
 
 To find the un-levered asset beta, we can use the formula below.
 
 \begin{align*}
 \beta_{\text{Asset}} &= \frac{\text{Equity}}{\text{Debt + Equity}}\times \beta_{\text{Equity}} \\
                     &= (1 - \lambda) \times \beta_{\text{Equity}} \\
-                    &= (1 - 0.422) \times 1.25 \\
-                    &= 0.7225
+                    &= (1 - 0.3723) \times 1.25 \\
+                    &= 0.78468
 \end{align*}
 
-The un-levered asset beta is 0.7225.
+The un-levered asset beta is 0.785.
 
 \end{document}
