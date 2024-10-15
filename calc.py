@@ -22,9 +22,7 @@ def unlevered_asset_beta(leverage_ratio, beta_equity):
     return ((1 - leverage_ratio) * beta_equity)
 
 def relevered_equity_beta(leverage_ratio_2, beta_asset):
-    de_ratio = leverage_ratio_2 / (1 - leverage_ratio_2)
-    return beta_asset * (1 + de_ratio)
-    # return ((1/(1 - leverage_ratio_2)) * beta_asset)
+    return ((1/(1 - leverage_ratio_2)) * beta_asset)
 
 # APPLICATION LAYER
 
