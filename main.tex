@@ -54,31 +54,31 @@ We can also analyze the difference in the 4 costs of debt based on the nature of
 For Midland's WACC calculations, we care about the WACC in year 2006. So it makes the most sense to take the tax in year 2006.
 
 \begin{align*}
-    t_{2006} = \frac{\$7,414}{\$17,910} &= 38.58\% \\
+    t_{2006} = \frac{\$11,747}{\$30,447} &= 38.58\% \\
 \end{align*}
 
 So the average tax rate that we recommend using for WACC calculations is 38.58\%.
 
-The EMRP represents the difference between the expected return on equity and the risk-free rate. 
+The EMRP represents the difference between the expected return of a diversified portfolio and the risk-free rate. 
 
 \[
-\text{EMRP} = \text{Expected Equity Return} - \text{Risk-Free Rate}
+\text{EMRP} = \text{Expected Portfolio Return} - \text{Risk-Free Rate}
 \]
 
-An EMRP of 5\% implies the expected equity return be 4.66\% + 5\% = 9.66\%. We can use this to estimate Midland's consolidated cost of equity using the formula below.
+An EMRP of 5\% implies an expected diversified portfolio return will be 4.66\% + 5\% = 9.66\%. We can use this to estimate Midland's consolidated cost of equity using the formula below.
 
 \[
 r_E = r_f + \beta \times \text{EMRP}
 \]
 
-We can get the value of $\beta$ from Exhibit 5 - the equity beta is given to be 1.25.
+We can get the value of $\beta$ from Exhibit 5 -- the equity beta is given to be 1.25. Using this, we can calculate Midland's consolidated cost of equity:
 
 \begin{align*}
 r_E &= 4.66\% + 1.25 \times 5\% \\
 r_E &= 10.91\%
 \end{align*}
 
-To calculate the after-tax cost of capital, we need one more piece of information - the debt/value $\lambda$. We see from Exhibit 5 that the D/E ratio is 59.3\%.
+Regarding Midland's after-tax cost of capital, we need one more piece of information -- the debt fraction of total capital, $\lambda$. We see from Exhibit 5 that the D/E ratio is 59.3\%:
 
 \begin{align*}
     \lambda &= \frac{D}{D+E} \\
@@ -87,16 +87,15 @@ To calculate the after-tax cost of capital, we need one more piece of informatio
             &= \frac{0.593}{1.593} \\
     \lambda &= 37.23\%
 \end{align*}
-
 \begin{align*}
 WACC_{a.t.} &= \lambda (1-t) r_D + (1-\lambda)r_E \\
             &= 0.3723 \times (1 - 0.3858) \times 0.0628 + (1 - 0.3723) \times 0.1091 \\
             &= 0.08285
 \end{align*}
 
-The $WACC_{a.t.}$ is 8.29\%.
+Midland's $WACC_{a.t.}$ is 8.29\%.
 
-To find the un-levered asset beta, we can use the formula below.
+To find the un-levered asset beta, we can use the formula below:
 
 \begin{align*}
 \beta_{\text{Asset}} &= \frac{\text{Equity}}{\text{Debt + Equity}}\times \beta_{\text{Equity}} \\
@@ -107,7 +106,7 @@ To find the un-levered asset beta, we can use the formula below.
 
 The un-levered asset beta ($\beta_{Asset}$) is 0.785.
 
-The analysis so far has been done with data from 2006. Exhibit 5 mentions that the data is for EOY 2006. Table 1 indicates the target debt ratios for 2007 - we see that the target debt value is 42.2\%. This is a slight increase from the original debt value of 37.23\%.
+The analysis so far has been done with data from 2006. Exhibit 5 mentions that the data is for EOY 2006. Table 1 indicates the target debt ratios for 2007 - we see that the target debt value is 42.2\%. This is a slight increase from the original debt value of 37.23\% so we must recalculate our beta using this new value:
 
 \begin{align*}
 \lambda_{1} &= 0.3723 \\
@@ -127,7 +126,7 @@ r_{E,2} &= r_f + \beta_{Equity, 2} \times \text{EMRP} \\
     &= 0.114479
 \end{align*}
 
-The new cost of equity is 11.45\%. The corresponding WACC can be calculated as shown below:
+We find a new cost of equity of 11.45\%. The corresponding WACC can be calculated as shown below:
 
 \begin{align*}
 WACC_{a.t., 2007} &= \lambda_2 (1-t) r_D + (1-\lambda_2)r_{E,2} \\
@@ -144,8 +143,7 @@ To graph the company's cost of equity and WACC as a function of it debt fraction
     \caption{Cost of equity vs. Debt Fraction}
 \end{figure}
 
-\color{orange}
-The cost of equity rises because as the debt value increases, the risk to investors increases so they demand a higher rate of return. At 0 debt, there is little risk to investors - so the cost of equity is very low. As debt increases, the interest that the investors require increases dramatically.
+The cost of equity rises because as the debt fraction increases, the risk to investors increases so they demand a higher rate of return. At zero debt, there is little risk to investors -- so the cost of equity is very low. As debt increases, the return that the investors require increases as well. As debt fraction approaches one, the amount of debt approaches the amount of value or collateral of a company, meaning the company almost has more debt than the market value of its assets, making it an extremely risky investment, hence the exponential increase to cost of equity. 
 \color{black}
 
 \begin{figure}[H]
@@ -153,8 +151,8 @@ The cost of equity rises because as the debt value increases, the risk to invest
     \caption{WACC vs. Debt Fraction}
 \end{figure}
 
-\color{orange}
-This makes sense because we assume a constant cost of debt $r_D$, which means that as the debt fraction goes up there's a lesser proportion of equity, so it's a decreasing linear relationship.
-\color{black}
+This ties with our WACC formula because as the proportion of debt to value increases, the equity term in the formula will decrease. Since we assume a constant cost of debt, this leads to a decreasing linear relationship. In a macro view, WACC is expected to eventually begin increasing again as the risk of debt grows because both lenders and equity holders will require greater returns. 
+
+In a practical sense, the optimal debt fraction for a company should be in between the two extremes. Investors generally do not want to invest in a company that either does not offer satisfactory rates of return or is too risky. Midland, being an energy company, will have to take on debt to finance oil exploration, well drilling, and other expensive projects. However, it should not want to increase its cost of debt too much as that would increase its cost of equity and financial risk. Midland should avoid too low of a WACC which would indicate an over-reliance on debt financing but too high of a WACC would limit investment opportunities and make projects less affordable. 
 
 \end{document}
