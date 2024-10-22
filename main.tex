@@ -14,6 +14,7 @@
 \usepackage{listings}
 \usepackage{framed}
 \usepackage{makecell}
+\usepackage[margin=1.5in]{geometry}
 \usepackage[dvipsnames]{xcolor}
 \setlength{\parskip}{1em}
 \parindent=0pt
@@ -154,5 +155,44 @@ The cost of equity rises because as the debt fraction increases, the risk to inv
 This ties with our WACC formula because as the proportion of debt to value increases, the equity term in the formula will decrease. Since we assume a constant cost of debt, this leads to a decreasing linear relationship. In a macro view, WACC is expected to eventually begin increasing again as the risk of debt grows because both lenders and equity holders will require greater returns. 
 
 In a practical sense, the optimal debt fraction for a company should be in between the two extremes. Investors generally do not want to invest in a company that either does not offer satisfactory rates of return or is too risky. Midland, being an energy company, will have to take on debt to finance oil exploration, well drilling, and other expensive projects. However, it should not want to increase its cost of debt too much as that would increase its cost of equity and financial risk. Midland should avoid too low of a WACC which would indicate an over-reliance on debt financing but too high of a WACC would limit investment opportunities and make projects less affordable. 
+
+\begin{table}[H]
+    \begin{tabularx}{\textwidth}{|>{\centering\arraybackslash}X|>{\centering\arraybackslash}X|>{\centering\arraybackslash}X|>{\centering\arraybackslash}X|}
+        \hline
+         & Asset Beta \\ \hline
+        \textit{Exploration \& Production:} & \\ \hline
+        Jackson Energy, Inc. & 0.80 \\ \hline
+        Wide Plain Petroleum & 0.65\\ \hline
+        Corsicana Energy Corp. & 0.96\\ \hline
+        Worthington Petroleum & 0.94\\ \hline
+        \textbf{Average}& \textbf{.84}\\ \hline
+        & \\ \hline
+        \textit{Refining \& Marketing:} & \\ \hline
+        Bexar Energy, Inc. & 1.54\\ \hline
+        Kirk Corp. & .79\\ \hline
+        White Point Energy & 1.47\\ \hline
+        Arkana Petroleum Corp. & .94\\ \hline
+        Beaumont Energy, Inc. & .86\\ \hline
+        Dameron Fuel Services & .94\\ \hline
+        \textbf{Average} & \textbf{1.09}\\ \hline
+    \end{tabularx}
+\end{table}
+
+Using the same equations as previous calculations, we can unlever and relever the averages in the table above to find the equity betas for both Midland's Exploration \& Production and Refining \& Marketing divisions:
+\begin{align*}
+    \text{Exploration \& Production}\; \beta_E = 1.56\\
+    \text{Refining \& Marketing}\; \beta_E = 1.58 
+\end{align*}
+Similarly, we can find each division's cost of equity and WACC:
+\begin{align*}
+    \text{Exploration \& Production}\; r_E = 12.4\%\\
+    \text{Exploration \& Production}\; \text{WACC} = 8.5\%\\
+    \text{Refining \& Marketing}\; r_E = 12.6\%\\
+    \text{Refining \& Marketing}\; \text{WACC} = 9.9\%
+\end{align*}
+If these new WACC hurdles were used, Midland would require a greater return on investment for investments within the Refining and Marketing division. This result ties with our comparable asset betas, with a value greater than one for companies in refining and marketing, implying that they are riskier or more volatile. Therefore, Midland's investment decisions within this division should be more careful and inquire deeper into potential gains and risk management to better reflect Midland's comparables. 
+
+Subsequently, Midland should use differing hurdle rates for each division because the Exploration and Production division is less risky on average, as shown in the table above. Midland's consolidated equity beta of 1.25 implies that the company as a whole is rather volatile but we now know that this is mostly due to its Refining and Marketing division. While using a consolidated WACC would be simpler from a management perspective, it would increase the cost of equity for one division unnecessarily. Differing hurdle rates allows for Midland to better understand its different businesses and to optimize its investment decisions according to each division's risk. 
+
 
 \end{document}
